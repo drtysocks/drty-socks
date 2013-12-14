@@ -1,5 +1,5 @@
 #footer
-  background-color: gray
+  background-color: #e5efff
   height: 100px
   width: 100%
 
@@ -9,7 +9,8 @@
 
   .app-support
     text-decoration: none
-    color: white
+    color: black
+    bold()
     column(3)
     offset(1)
     position: relative
@@ -41,16 +42,17 @@
         width: 240px
 
       li.icons
-        size: 50
+        size: 40
         float: left
         margin: 2em .5em 1em .5em
+        bg('/img/social-icons-sprite.png') no-repeat
 
         &.twitter
-          bg('http://placehold.it/48x48')
+          background-position: -174px 0
         &.facebook
-          bg('http://placehold.it/48x48')
+          background-position: -131px 0
         &.instagram
-          bg('http://placehold.it/48x48')
+          background-position: -44px 0
 
   .download-app
     float: right
