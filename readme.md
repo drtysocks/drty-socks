@@ -7,5 +7,5 @@ Drty Socks's website built on roots using the semantic grid system
 - install [node](http://nodejs.org/)
 - install [ruby](https://www.ruby-lang.org/en/) if you want to use the rake tasks
 - `npm install roots -g`
-- `git clone git@github.com:adamjonas/drty-socks.git && cd drty-socks`
+- `git clone git@github.com:drtysocks/drty-socks.git && cd drty-socks`
 - `roots watch`
