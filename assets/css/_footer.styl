@@ -1,0 +1,75 @@
+#footer
+  background-color: gray
+  height: 100px
+  width: 100%
+
+  @media screen and (max-width: 769px)
+    height: 150px
+
+
+  .app-support
+    text-decoration: none
+    color: white
+    column(3)
+    offset(1)
+    position: relative
+    top: 46px
+
+    @media screen and (max-width: 769px)
+      display: block
+      width: 100%
+      text-align: center
+      padding-top: 1em
+      float: none
+      margin: 0
+      top: 5px
+
+  .social-icons
+    column(4)
+
+    @media screen and (max-width: 769px)
+      width: 100%
+      margin: 0
+
+    ul.horizontal-list
+      margin: 0
+      list-style-type: none
+
+      @media screen and (max-width: 769px)
+        display: block
+        margin: 0 auto
+        width: 240px
+
+      li.icons
+        size: 50
+        float: left
+        margin: 2em .5em 1em .5em
+
+        &.twitter
+          bg('http://placehold.it/48x48')
+        &.facebook
+          bg('http://placehold.it/48x48')
+        &.instagram
+          bg('http://placehold.it/48x48')
+
+  .download-app
+    float: right
+    border-radius: 10px
+    background-color: black
+    padding: 1.25em
+    color: white
+    column(2)
+    pull(1)
+    margin-top: 1.5em
+    text-align: center
+
+    span
+      color: gray
+
+    @media screen and (max-width: 769px)
+      width: 100%
+      border-radius: 0
+      text-align: center
+      margin: 0
+      padding: 20px 0
+      border: none
