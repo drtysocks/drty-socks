@@ -9,6 +9,28 @@
     @media screen and (max-width: 769px)
       column(12)
 
+    #quantity
+      column(6)
+      offset(1)
+
+      .incrementers
+        size: 27
+        bg('/img/plus-minus-25.png') no-repeat
+        float: left
+
+      .plus
+        background-position: 0 0
+
+      .minus
+        background-position: 0 -35px
+
+      label
+        float: left
+        
+      input
+        width: 30px
+        float: left
+
   .image-wrapper
     column(5)
     padding: 50px 0

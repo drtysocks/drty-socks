@@ -20,8 +20,14 @@
   <div class="panel-copy">
     <h2>Buy Now</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <div id="quantity">
+      <label for="name">How Many Socks?</label>
+      <input id="socks" type="text" name="socks-quantity" value="1"/>
+      <div class="incrementers plus"></div>
+      <div class="incrementers minus"></div>
+    </div>
     <form action="/charge" method="POST"></form>
-    <script src="https://checkout.stripe.com/checkout.js" data-key="pk_test_Z6nPjP07pia8cwGsDoIJzgHQ" data-image="img/square-image.png" data-name="Drty Socks" data-description="1 pair ($10.00)" data-amount="1000" class="stripe-button"></script>
+    <script src="https://checkout.stripe.com/checkout.js" data-key="pk_test_Z6nPjP07pia8cwGsDoIJzgHQ" data-image="img/square-image.png" data-name="Drty Socks" data-description="" data-amount="" class="stripe-button"></script>
   </div>
   <div class="image-wrapper"><img src="http://placehold.it/250x250"/></div>
   <div class="clear"></div>

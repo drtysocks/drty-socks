@@ -328,6 +328,35 @@ img {
     *margin: 0 1.0416666666666665% -correction;
   }
 }
+#buy-now .panel-copy #quantity {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  *width: 47.91666666666667% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+  margin-left: 9.375%;
+}
+#buy-now .panel-copy #quantity .incrementers {
+  width: 27px;
+  height: 27px;
+  background: url("/img/plus-minus-25.png") no-repeat;
+  float: left;
+}
+#buy-now .panel-copy #quantity .plus {
+  background-position: 0 0;
+}
+#buy-now .panel-copy #quantity .minus {
+  background-position: 0 -35px;
+}
+#buy-now .panel-copy #quantity label {
+  float: left;
+}
+#buy-now .panel-copy #quantity input {
+  width: 30px;
+  float: left;
+}
 #buy-now .image-wrapper {
   display: inline;
   float: left;

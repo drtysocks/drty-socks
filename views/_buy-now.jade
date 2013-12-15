@@ -3,8 +3,13 @@
     h2 Buy Now
     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     
+    #quantity
+      label(for="name") How Many Socks?
+      input#socks(type='text', name='socks-quantity', value='1')
+      .incrementers.plus
+      .incrementers.minus
     form(action='/charge', method='POST')
-    script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_Z6nPjP07pia8cwGsDoIJzgHQ', data-image='img/square-image.png', data-name='Drty Socks', data-description='1 pair ($10.00)', data-amount='1000')
+    script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_Z6nPjP07pia8cwGsDoIJzgHQ', data-image='img/square-image.png', data-name='Drty Socks', data-description='', data-amount='')
           
   .image-wrapper
     img(src='http://placehold.it/250x250')
