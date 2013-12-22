@@ -1,1 +1,49 @@
-(function(){require.config({paths:{jquery:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min",modal:"/js/vendor/modal.min"},shim:{modal:{deps:["jquery"]}}}),require(["jquery","modal"],function(a){return a(".plus").on("click",function(){return a("input").val(parseFloat(a("input").val())+1)}),a(".minus").on("click",function(){if(parseFloat(a("input").val())!==1&&a("input").val()!==1)return a("input").val(parseFloat(a("input").val())-1)}),a("button.stripe-button-el").on("click",function(){var b;return b=parseFloat(a("input").val()),a("script[data-name='Drty Socks']").attr("data-amount",b*1e3).attr("data-name","Drty Socks ("+b*10+".00)").attr("data-description","Drty Socks")}),a(".buy-now").on("click",function(){return a("#modal").modal()}),a(document).keyup(function(b){if(b.keyCode===27)return a.modal.close()}),a(".stripe-container").on("click",function(){return a.modal.close()})})}).call(this)
+(function() {
+  require.config({
+    paths: {
+      jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min',
+      modal: '/js/vendor/modal.min',
+      stripe: 'https://checkout.stripe.com/checkout'
+    },
+    shim: {
+      modal: {
+        deps: ['jquery']
+      }
+    }
+  });
+
+  require(['jquery', 'modal', 'stripe'], function($) {
+    $(".plus").on("click", function() {
+      return $('input').val(parseFloat($('input').val()) + 1);
+    });
+    $(".minus").on("click", function() {
+      if (parseFloat($('input').val()) !== 1) {
+        if ($('input').val() !== 1) {
+          return $('input').val(parseFloat($('input').val()) - 1);
+        }
+      }
+    });
+    $('.buy-now').on('click', function() {
+      return $('#modal').modal();
+    });
+    $(document).keyup(function(e) {
+      if (e.keyCode === 27) {
+        return $.modal.close();
+      }
+    });
+    $('.stripe-container').on('click', function() {
+      return $.modal.close();
+    });
+    return $('#pay-now').on("click", function() {
+      var quant;
+      quant = parseFloat($('input').val());
+      return StripeCheckout.open({
+        name: 'Drty Socks',
+        amount: quant * 1000,
+        description: "($" + (quant * 10) + ")",
+        image: "/img/square-image.png"
+      });
+    });
+  });
+
+}).call(this);
