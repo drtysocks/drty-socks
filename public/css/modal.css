@@ -1,0 +1,30 @@
+#modal {
+  display: none;
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 460px;
+  margin: 0 10px;
+  *width: 460px -correction;
+  *margin: 0 10px -correction;
+  margin-left: 90px;
+}
+#modal .incrementers {
+  width: 27px;
+  height: 27px;
+  background: url("/img/plus-minus-25.png") no-repeat;
+  float: left;
+}
+#modal .plus {
+  background-position: 0 0;
+}
+#modal .minus {
+  background-position: 0 -35px;
+}
+#modal label {
+  float: left;
+}
+#modal input {
+  width: 30px;
+  float: left;
+}
