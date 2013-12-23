@@ -473,6 +473,10 @@ img {
 #buy-now .image-wrapper img {
   margin: 0 auto;
 }
+#buy-now .image-wrapper img.full {
+  width: 250px;
+  height: 250px;
+}
 #buy-now .image-wrapper img.mini {
   float: left;
   margin: 1em;
@@ -529,6 +533,8 @@ img {
 }
 #about .image-wrapper img {
   margin: 0 auto;
+  width: 250px;
+  height: 250px;
 }
 #footer {
   background-color: #e5efff;

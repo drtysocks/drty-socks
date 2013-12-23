@@ -30,7 +30,7 @@ require ['jquery', 'modal', 'stripe'], ($) ->
   #product image
   $('.mini').on 'click', ->
     pic = $(@).data('index')
-    $('.full').attr('src', "/img/socks-#{pic}.jpg")
+    $('.full').attr('src', "/img/socks-#{pic}.png")
 
 
   #stripe

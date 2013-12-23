@@ -37,7 +37,7 @@
     $('.mini').on('click', function() {
       var pic;
       pic = $(this).data('index');
-      return $('.full').attr('src', "/img/socks-" + pic + ".jpg");
+      return $('.full').attr('src', "/img/socks-" + pic + ".png");
     });
     return $('#pay-now').on("click", function() {
       var quant;
