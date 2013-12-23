@@ -34,6 +34,11 @@
     $('.stripe-container').on('click', function() {
       return $.modal.close();
     });
+    $('.mini').on('click', function() {
+      var pic;
+      pic = $(this).data('index');
+      return $('.full').attr('src', "/img/socks-" + pic + ".jpg");
+    });
     return $('#pay-now').on("click", function() {
       var quant;
       quant = parseFloat($('input').val());

@@ -27,8 +27,13 @@ require ['jquery', 'modal', 'stripe'], ($) ->
 
   $('.stripe-container').on 'click', -> $.modal.close()
 
-  #stripe
+  #product image
+  $('.mini').on 'click', ->
+    pic = $(@).data('index')
+    $('.full').attr('src', "/img/socks-#{pic}.jpg")
 
+
+  #stripe
   $('#pay-now').on "click", ->
     quant = parseFloat($('input').val())
     StripeCheckout.open
